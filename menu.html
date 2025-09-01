@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niyantri Cafe - Menu</title>
+  <meta name="description" content="Explore our handcrafted coffee menu at Niyantri Cafe." />
+  <!-- Fonts: Merriweather (serif) and Inter (sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --heading-font: 'Merriweather', serif; --body-font: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: var(--heading-font); }
+    body { font-family: var(--body-font); }
+  </style>
+</head>
+<body class="min-h-screen bg-amber-50 text-slate-800 opacity-0 transition-opacity duration-1000 ease-in-out">
+  <header class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <nav class="max-w-full px-4 py-3 md:px-8 md:py-4 flex items-center justify-between">
+      <a href="./index.html" class="text-2xl font-semibold text-amber-900 hover:text-amber-700 transition-all duration-300">Niyantri Cafe</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="hover:underline transition-all duration-300">Home</a>
+        <a href="./menu.html" class="hover:underline transition-all duration-300">Menu</a>
+        <a href="./cart.html" class="hover:underline transition-all duration-300">Cart</a>
+        <a href="./about.html" class="hover:underline transition-all duration-300">About</a>
+        <a href="./contact.html" class="hover:underline transition-all duration-300">Contact</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md bg-amber-600 text-white hover:bg-amber-700 transition-all duration-300" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-2 space-y-1 bg-amber-50">
+      <a href="./index.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Home</a>
+      <a href="./menu.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Menu</a>
+      <a href="./cart.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Cart</a>
+      <a href="./about.html" class="block px-2 py-2 hover:bg-amber-100 rounded">About</a>
+      <a href="./contact.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-8 pb-16">
+    <section class="px-6 py-8">
+      <h1 class="text-4xl md:text-5xl font-semibold" style="font-family: Merriweather, serif;">Our Menu</h1>
+      <p class="mb-6 text-slate-700">Delightful coffee selections and treats crafted with care.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://images.unsplash.com/photo-1605468596782-502ce2012ef0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxhJTIwc2hvdCUyMG9mJTIwZXNwcmVzc28lMjBpbiUyMGElMjBzbWFsbCUyMGN1cHxlbnwwfDB8fHwxNzU2NzE4MDE3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Espresso" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Espresso</h3>
+          <p class="text-sm text-slate-700">Bold and rich shot with a velvety crema.</p>
+          <span class="block mt-2 font-semibold">$2.50</span>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://pixabay.com/get/ge758c7aac99672db4a4655b0978baa21559b67aaafcb443e9df244781c9c69d37321d3db3abc6119f5e18adad6eba132b4bca07832547d8d5c2b204434a46e2c_640.jpg" alt="Cappuccino" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Cappuccino</h3>
+          <p class="text-sm text-slate-700">Espresso with steamed milk and a perfect foam crown.</p>
+          <span class="block mt-2 font-semibold">$3.50</span>
+        </div>
+        <!-- Item 3 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://images.pexels.com/photos/7214487/pexels-photo-7214487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Latte" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Latte</h3>
+          <p class="text-sm text-slate-700">Silky milk, smooth coffee, and a touch of sweetness.</p>
+          <span class="block mt-2 font-semibold">$4.00</span>
+        </div>
+        <!-- Item 4 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://images.pexels.com/photos/30925472/pexels-photo-30925472.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Americano" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Americano</h3>
+          <p class="text-sm text-slate-700">Espresso diluted with hot water for a bold yet smooth cup.</p>
+          <span class="block mt-2 font-semibold">$3.00</span>
+        </div>
+        <!-- Item 5 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://pixabay.com/get/gacece98fd606669214db084a4e4f9f1558939a59a3ca89566221a627948147347123d2fa5ce4f380938a913e092f53adcd55cc4ffab7116a4b6f4846b45e3ad3_640.jpg" alt="Mocha" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Mocha</h3>
+          <p class="text-sm text-slate-700">Chocolatey coffee with a creamy finish.</p>
+          <span class="block mt-2 font-semibold">$4.25</span>
+        </div>
+        <!-- Item 6 -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+          <img src="https://images.unsplash.com/photo-1495220390995-1487cfe6810c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxjb2xkJTIwYnJld3xlbnwwfDB8fHwxNzU2NzE4MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cold Brew" class="w-full h-40 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold" style="font-family: Merriweather, serif;">Cold Brew</h3>
+          <p class="text-sm text-slate-700">Smooth, refreshing, and ready to sip.</p>
+          <span class="block mt-2 font-semibold">$4.50</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Niyantri Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => { menu?.classList.toggle('hidden'); });
+
+    // Page load fade-in
+    window.addEventListener('load', () => document.body.classList.remove('opacity-0'));
+  </script>
+</body>
+</html>
