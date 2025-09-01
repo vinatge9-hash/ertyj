@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niyantri Cafe - Home</title>
+  <meta name="description" content="Niyantri Cafe: a cozy coffee shop offering handcrafted coffee and pastries." />
+  <!-- Fonts: Merriweather (serif) and Inter (sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --heading-font: 'Merriweather', serif; --body-font: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: var(--heading-font); }
+    body { font-family: var(--body-font); }
+  </style>
+</head>
+<body class="min-h-screen bg-amber-50 text-slate-800 opacity-0 transition-opacity duration-1000 ease-in-out">
+  <header class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <nav class="max-w-full px-4 py-3 md:px-8 md:py-4 flex items-center justify-between">
+      <a href="./index.html" class="text-2xl font-semibold text-amber-900 hover:text-amber-700 transition-all duration-300">Niyantri Cafe</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="hover:underline transition-all duration-300">Home</a>
+        <a href="./menu.html" class="hover:underline transition-all duration-300">Menu</a>
+        <a href="./cart.html" class="hover:underline transition-all duration-300">Cart</a>
+        <a href="./about.html" class="hover:underline transition-all duration-300">About</a>
+        <a href="./contact.html" class="hover:underline transition-all duration-300">Contact</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md bg-amber-600 text-white hover:bg-amber-700 transition-all duration-300" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-2 space-y-1 bg-amber-50">
+      <a href="./index.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Home</a>
+      <a href="./menu.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Menu</a>
+      <a href="./cart.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Cart</a>
+      <a href="./about.html" class="block px-2 py-2 hover:bg-amber-100 rounded">About</a>
+      <a href="./contact.html" class="block px-2 py-2 hover:bg-amber-100 rounded">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-8 pb-16">
+    <section class="w-full h-screen bg-gradient-to-br from-amber-600 to-amber-900 text-white relative flex items-center">
+      <div class="container mx-auto px-6 md:px-12 text-center w-full">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4" style="font-family: Merriweather, serif;">Niyantri Cafe</h1>
+        <p class="text-lg md:text-2xl opacity-90 mb-8">A cozy corner for handcrafted coffee, artisanal pastries, and warm conversations.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="./menu.html" class="px-6 py-3 rounded-md bg-white text-amber-900 font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">View Menu</a>
+          <a href="./contact.html" class="px-6 py-3 rounded-md bg-amber-200 text-amber-900 font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-12 grid md:grid-cols-3 gap-6">
+      <article class="bg-white rounded-lg shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+        <img src="https://images.pexels.com/photos/16921455/pexels-photo-16921455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Steaming cup of coffee on a wooden table" class="w-full h-40 object-cover rounded mb-4"/>
+        <h3 class="text-xl font-semibold mb-2" style="font-family: Merriweather, serif;">Artisan Coffee</h3>
+        <p class="text-sm text-slate-700">Small-batch beans, ethically sourced, roasted to perfection.</p>
+      </article>
+      <article class="bg-white rounded-lg shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+        <img src="https://images.pexels.com/photos/7447291/pexels-photo-7447291.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Assortment of pastries" class="w-full h-40 object-cover rounded mb-4"/>
+        <h3 class="text-xl font-semibold mb-2" style="font-family: Merriweather, serif;">Fresh Pastries</h3>
+        <p class="text-sm text-slate-700">Croissants, muffins, and treats baked daily.</p>
+      </article>
+      <article class="bg-white rounded-lg shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+        <img src="https://images.pexels.com/photos/12538666/pexels-photo-12538666.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cozy seating area" class="w-full h-40 object-cover rounded mb-4"/>
+        <h3 class="text-xl font-semibold mb-2" style="font-family: Merriweather, serif;">Cozy Ambience</h3>
+        <p class="text-sm text-slate-700">A welcoming space to work, meet, and unwind.</p>
+      </article>
+    </section>
+
+    <section class="px-6 py-8 bg-amber-50">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-4" style="font-family: Merriweather, serif;">What our guests say</h2>
+        <p class="mb-6 text-slate-700">A few words from our regulars about the experience at Niyantri Cafe.</p>
+      </div>
+    </section>
+
+    <section class="px-6 pb-12 grid md:grid-cols-3 gap-6">
+      <blockquote class="bg-white rounded-lg p-6 shadow-md border-l-4 border-amber-600" style="min-height: 180px;">
+        <p class="text-slate-700">“A perfect mug of warmth on a rainy day. The pastries are delightful.”</p>
+        <cite class="block mt-3 not-italic font-semibold">- Priya S.</cite>
+      </blockquote>
+      <blockquote class="bg-white rounded-lg p-6 shadow-md border-l-4 border-amber-600" style="min-height: 180px;">
+        <p class="text-slate-700">“The cozy space keeps me coming back for more.”</p>
+        <cite class="block mt-3 not-italic font-semibold">- Arjun R.</cite>
+      </blockquote>
+      <blockquote class="bg-white rounded-lg p-6 shadow-md border-l-4 border-amber-600" style="min-height: 180px;">
+        <p class="text-slate-700">“Great coffee and friendly staff. A gem in the neighborhood.”</p>
+        <cite class="block mt-3 not-italic font-semibold">- Neha K.</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Niyantri Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+
+    // Page load fade-in
+    window.addEventListener('load', () => document.body.classList.remove('opacity-0'));
+  </script>
+</body>
+</html>
